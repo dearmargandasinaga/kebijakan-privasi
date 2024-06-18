@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi website soal.ku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url('background1.jpg');
+            background-size: cover;
+            background-position: center;
+            transition: background-image 1s ease-in-out;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .more-info {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+
+        .more-info button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .form-popup {
+            display: none;
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -20%);
+            border: 3px solid #4CAF50;
+            z-index: 9;
+            background-color: white;
+        }
+
+        .form-container {
+            max-width: 300px;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .form-container input[type="email"],
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .form-container .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+
+        .form-container .cancel {
+            background-color: red;
+        }
+
+        .form-container .btn:hover,
+        .open-button:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kebijakan Privasi Soal.ku</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Pengumpulan Data</h2>
+            <p>Kami mengumpulkan informasi melalui file log untuk keamanan web site dan menghindari serangan Ddos</p>
+        </section>
+        <section>
+            <h2>Penggunaan Google from dalam membuat soal</h2>
+            <p>Kami menggunakan google from dalam membuat soal dan mengedit soal,semua orang juga dapat mengedit soal yang telah kami buat di web kami </p>
+        </section>
+        <section>
+            <h2>Situs Web ramah remaja</h2>
+            <p>Kebijakan ini merupakan sebuah kebebasan remaja dalam membuat berkreasi dalam membuat soal nya sendiri dengan di soal nya ada nama nya sendiri</p>
+        </section>
+        <section>
+            <h2>Informasi Anak-Anak</h2>
+            <p>Kami tidak mengumpulkan informasi pribadi dari anak-anak di bawah 13 tahun dan mendorong pengawasan orang tua.</p>
+        </section>
+        <section>
+            <h2>Penerapan Kebijakan</h2>
+            <p>Kebijakan ini hanya berlaku untuk pengumpulan data online.</p>
+        </section>
+    </main>
+    <footer>
+        <p>@dearmargandasinaga 2024 copyright to 1.1.1 </p>
+    </footer>
+    <div class="more-info">
+        <button onclick="showForm()">from pertanyaan</button>
+    </div>
+    <div class="form-popup" id="formPopup">
+        <form class="form-container">
+            <h2>Pertanyaan Lebih Lanjut</h2>
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Masukkan Email" name="email" required>
+
+            <label for="question"><b>Pertanyaan</b></label>
+            <textarea placeholder="Masukkan Pertanyaan Anda" name="question" required></textarea>
+
+            <button type="submit" class="btn">Kirim</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">closeForm</button>
+        </form>
+    </div>
+
+    <!-- Tambahkan kode JavaScript di bawah ini -->
+    <script>
+        let currentIndex = 0;
+        const images = ['https://images.tokopedia.net/img/JFrBQq/2022/6/22/20640a64-0bd7-4d80-8c03-e8fdc1dff62c.jpg', 'https://images.tokopedia.net/img/KRMmCm/2022/6/22/c6fa942e-31b6-4a64-bd29-7599f47c9dc2.jpg', 'https://images.tokopedia.net/img/JFrBQq/2022/6/22/3e623bd4-b169-4cf9-9d6f-0295cb5a17c5.jpg'];
+
+        function changeBackground() {
+            currentIndex = (currentIndex + 1) % images.length;
+            document.body.style.backgroundImage = `url(${images[currentIndex]})`;
+        }
+
+        setInterval(changeBackground, 10000);
+
+        function showForm() {
+            document.getElementById("formPopup").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("formpopup").style.display = "block";
+        }
+    </script>
+</body>
+</html>
