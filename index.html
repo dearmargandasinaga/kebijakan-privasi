@@ -148,7 +148,7 @@
             </form>
         </div>
 
-        <!-- Proses PHP untuk menyimpan komentar -->
+      
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Ambil data dari form
@@ -167,11 +167,7 @@
             // Simpan data ke file
             file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
             
-            // Beri pesan sukses
-            echo "<p>Terima kasih, pertanyaan Anda telah diterima!</p>";
-        }
-        ?>
-
+          
     </main>
     <footer>
         <p>@dearmargandasinaga 2024 copyright </p>
@@ -182,6 +178,7 @@
     </div>
 
     <script>
+        import { SpeedInsights } from "@vercel/speed-insights/next"
         let currentIndex = 0;
         const images = [
             'https://images.tokopedia.net/img/JFrBQq/2022/6/22/20640a64-0bd7-4d80-8c03-e8fdc1dff62c.jpg',
