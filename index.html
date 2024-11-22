@@ -178,7 +178,9 @@
     </div>
 
     <script>
-        import { SpeedInsights } from "@vercel/speed-insights/next"
+       import { injectSpeedInsights } from '@vercel/speed-insights';
+
+injectSpeedInsights();
         let currentIndex = 0;
         const images = [
             'https://images.tokopedia.net/img/JFrBQq/2022/6/22/20640a64-0bd7-4d80-8c03-e8fdc1dff62c.jpg',
