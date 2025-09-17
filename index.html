@@ -3,107 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kebijakan Privasi website soal.ku</title>
+    <title>Kebijakan Privasi Soal.ku</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            background-image: url('background1.jpg');
+            min-height: 100vh;
+            background-color: #f8fafc;
+            background-image: url('https://images.tokopedia.net/img/JFrBQq/2022/6/22/20640a64-0bd7-4d80-8c03-e8fdc1dff62c.jpg');
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             transition: background-image 1s ease-in-out;
         }
 
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
+            background: rgba(76, 175, 80, 0.92);
+            color: #fff;
+            padding: 32px 0 16px 0;
             text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            border-bottom-left-radius: 18px;
+            border-bottom-right-radius: 18px;
         }
 
         main {
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background: rgba(255,255,255,0.90);
+            border-radius: 20px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+            padding: 32px 18px;
+            margin: 48px auto 32px auto;
+            max-width: 820px;
         }
 
         section {
-            margin-bottom: 20px;
+            margin-bottom: 28px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #e0e0e0;
         }
 
         h2 {
-            color: #4CAF50;
+            color: #388e3c;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 2.1rem;
+            margin-bottom: 10px;
         }
 
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
+            padding: 18px;
+            background: rgba(76, 175, 80, 0.94);
+            color: #fff;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+            margin-top: 40px;
         }
 
         .more-info {
             position: fixed;
-            top: 10px;
-            left: 10px;
+            top: 26px;
+            left: 26px;
+            z-index: 10;
         }
 
         .more-info button {
             background-color: #4CAF50;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 13px 26px;
+            border-radius: 25px;
             cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+
+        .more-info button:hover {
+            background-color: #388e3c;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
         }
 
         .form-popup {
             display: none;
             position: fixed;
-            top: 20%;
+            top: 50%;
             left: 50%;
-            transform: translate(-50%, -20%);
+            transform: translate(-50%, -50%);
+            border-radius: 16px;
+            box-shadow: 0 4px 32px rgba(0,0,0,0.22);
+            z-index: 99;
+            background-color: #fff;
             border: 3px solid #4CAF50;
-            z-index: 9;
-            background-color: white;
         }
 
         .form-container {
-            max-width: 300px;
-            padding: 20px;
-            background-color: white;
+            max-width: 350px;
+            padding: 26px 20px;
+            background-color: #fff;
+        }
+
+        .form-container h2 {
+            margin-bottom: 14px;
+            color: #388e3c;
         }
 
         .form-container input[type="email"],
         .form-container textarea {
             width: 100%;
-            padding: 10px;
-            margin: 5px 0 15px 0;
-            border: 1px solid #ccc;
+            padding: 11px;
+            margin: 6px 0 18px 0;
+            border: 1px solid #bdbdbd;
+            border-radius: 6px;
+            font-size: 1rem;
+            resize: vertical;
             box-sizing: border-box;
         }
 
         .form-container .btn {
             background-color: #4CAF50;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 0;
             border: none;
+            border-radius: 7px;
             cursor: pointer;
             width: 100%;
-            margin-bottom: 10px;
-            opacity: 0.8;
+            margin-bottom: 11px;
+            font-size: 1rem;
+            opacity: 0.9;
+            transition: opacity 0.2s;
         }
 
-        .form-container .cancel {
-            background-color: red;
+        .form-container .btn.cancel {
+            background-color: #d32f2f;
         }
 
-        .form-container .btn:hover,
-        .open-button:hover {
+        .form-container .btn:hover {
             opacity: 1;
+        }
+        @media (max-width: 600px) {
+            main {
+                margin: 16px;
+                padding: 14px 6px;
+            }
+            .form-container {
+                max-width: 95vw;
+                padding: 16px 6px;
+            }
         }
     </style>
 </head>
@@ -114,15 +162,15 @@
     <main>
         <section>
             <h2>Pengumpulan Data</h2>
-            <p>Kami mengumpulkan informasi melalui file log untuk keamanan web site dan menghindari serangan Ddos</p>
+            <p>Kami mengumpulkan informasi melalui file log untuk keamanan website dan menghindari serangan DDoS.</p>
         </section>
         <section>
             <h2>Penggunaan Google Form dalam membuat soal</h2>
-            <p>Kami menggunakan Google Form dalam membuat soal dan mengedit soal. Semua orang juga dapat mengedit soal yang telah kami buat di web kami.</p>
+            <p>Kami menggunakan Google Form untuk membuat dan mengedit soal. Semua orang juga dapat mengedit soal yang sudah kami buat di website kami.</p>
         </section>
         <section>
             <h2>Situs Web Ramah Remaja</h2>
-            <p>Kebijakan ini merupakan sebuah kebebasan remaja dalam berkreasi, seperti membuat soal dengan nama mereka sendiri.</p>
+            <p>Kebijakan ini mengedepankan kebebasan remaja dalam berkreasi, seperti membuat soal dengan nama mereka sendiri.</p>
         </section>
         <section>
             <h2>Informasi Anak-Anak</h2>
@@ -141,36 +189,15 @@
                 <input type="email" placeholder="Masukkan Email" name="email" required>
 
                 <label for="question"><b>Pertanyaan</b></label>
-                <textarea placeholder="Masukkan Pertanyaan Anda" name="question" required></textarea>
+                <textarea placeholder="Masukkan Pertanyaan Anda" name="question" rows="4" required></textarea>
 
                 <button type="submit" class="btn">Kirim</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Tutup</button>
             </form>
         </div>
-
-      
-        <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            // Ambil data dari form
-            $email = htmlspecialchars($_POST['email']);
-            $question = htmlspecialchars($_POST['question']);
-            
-            // Waktu sekarang
-            $currentTime = date('Y-m-d H:i:s');
-            
-            // Format data yang akan disimpan
-            $data = "Email: $email\nPertanyaan: $question\nWaktu: $currentTime\n\n";
-            
-            // Nama file tempat menyimpan data
-            $file = "comments.txt";
-            
-            // Simpan data ke file
-            file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
-            
-          
     </main>
     <footer>
-        <p>@dearmargandasinaga 2024 copyright </p>
+        <p>&copy; dearmargandasinaga 2024</p>
     </footer>
     
     <div class="more-info">
@@ -178,31 +205,29 @@
     </div>
 
     <script>
-       import { injectSpeedInsights } from '@vercel/speed-insights';
-
-injectSpeedInsights();
-        let currentIndex = 0;
+        // Array gambar background
         const images = [
             'https://images.tokopedia.net/img/JFrBQq/2022/6/22/20640a64-0bd7-4d80-8c03-e8fdc1dff62c.jpg',
             'https://images.tokopedia.net/img/KRMmCm/2022/6/22/c6fa942e-31b6-4a64-bd29-7599f47c9dc2.jpg',
             'https://images.tokopedia.net/img/JFrBQq/2022/6/22/3e623bd4-b169-4cf9-9d6f-0295cb5a17c5.jpg'
         ];
+        let currentIndex = 0;
+
+        // Pastikan background awal sesuai gambar pertama
+        document.body.style.backgroundImage = `url(${images[currentIndex]})`;
 
         function changeBackground() {
             currentIndex = (currentIndex + 1) % images.length;
             document.body.style.backgroundImage = `url(${images[currentIndex]})`;
         }
-
         setInterval(changeBackground, 10000);
 
         function showForm() {
             document.getElementById("formPopup").style.display = "block";
         }
-
         function closeForm() {
             document.getElementById("formPopup").style.display = "none";
         }
     </script>
 </body>
 </html>
-
